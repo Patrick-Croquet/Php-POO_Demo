@@ -1,0 +1,25 @@
+<?php
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ * Description of Occassionnel
+ *
+ * @author 1702726
+ */
+require_once("traits3/Deplacement.trait");
+
+Class Occasionnel extends Joueur {
+    protected $scoreOc = 100 ;
+    use Deplacement;
+
+    public function hello(){
+	echo "Bonjour de la classe <br />";
+    }
+
+}
+

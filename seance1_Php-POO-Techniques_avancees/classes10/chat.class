@@ -1,0 +1,31 @@
+<?php              
+        class Chat implements Animal {
+            protected $caractere;
+            protected $couleur;
+            protected $poids;
+
+            protected $nom;
+
+            //Un setter ou mutateur sert à définir
+            public function setNom($nouveauNom) {
+                $this->nom = $nouveauNom ;
+            }
+            //Un getter ou accesseur sert à récupérer
+            public function getNom(){
+                return $this->nom ;
+            }
+
+            public function setDescription($cCa, $cCo, $cPo){
+                $this->caractere = $cCa;
+                $this->couleur = $cCo;
+                $this->poids = $cPo;
+            }
+
+            public function getDescription(){
+                return 'Caractère : ' . $this->caractere. '<br />' . 
+                        'Couleur : ' . $this->couleur . '<br />' . 
+                        'poids : ' . $this->poids;        
+
+            }
+        }
+?>

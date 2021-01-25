@@ -1,0 +1,28 @@
+<?php
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ * Description of Moi
+ *
+ * @author 1702726
+ */
+class Moi implements Humain{
+    protected $add;
+    protected $codepostal;
+    protected $ville;
+    
+    public function setAdresse($cA, $cP, $cV){
+        $this->add = $cA;
+        $this->codepostal = $cP;
+        $this->ville = $cV;
+    }
+    
+    public function getAdresse(){
+        return $this->add. '<br />' . $this->codepostal . '<br />' . $this->ville;
+    }
+}

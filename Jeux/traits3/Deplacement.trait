@@ -1,0 +1,37 @@
+<?php
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author 1702726
+ */
+trait Deplacement {
+    protected $nom;
+    protected $x = 0;
+
+    public function getNom(){
+	return $this->nom ;
+    }
+    
+    public function enAvant(){
+	$this->x += 1;
+	echo $this->nom. " avance d’une case. La position actuelle est " . 
+	$this->x. " .<br />" ;
+	return $this;
+    }
+    
+    public function hello(){
+	echo "Bonjour depuis le trait Deplacement<br />";
+    }
+    
+    public function bye(){
+	echo "Au revoir depuis le trait Deplacement <br />";
+    }
+
+}
+

@@ -1,0 +1,13 @@
+<?php
+class Animal {
+    protected $nom;
+
+            //Un setter ou mutateur sert à définir
+            public function setNom($nouveauNom) {
+                    $this->nom = $nouveauNom;
+            }
+            //Un getter ou accesseur sert à récupérer
+            public function getNom(){
+                    return $this->nom;
+            }
+}

@@ -1,0 +1,39 @@
+<?php
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ * Description of Joueur
+ *
+ * @author 1702726
+ */
+Class Joueur {
+	protected $score = 150;
+        
+	public function __construct($nouveauNom){
+            $this->nom = $nouveauNom;
+        }
+        
+        //L’argument passé doit être un objet de la classe Occasionnel
+	public function testTypeObjet(Occasionnel $occasionnel){
+            $this->score +=$occasionnel->scoreOc;
+        }
+        public function getScore(){
+            return "Score actuel : " .$this->score. "<br />";
+        }
+        //L’argument passé doit être un tableau 
+        public function testTypeTableau(array $table){
+            print_r($table) ;
+        }
+        public function hello(){
+            echo "Bonjour de la classe mère <br />";
+        }
+        public function bye(){
+            echo "Au revoir de la classe mère <br />";
+        }
+
+}

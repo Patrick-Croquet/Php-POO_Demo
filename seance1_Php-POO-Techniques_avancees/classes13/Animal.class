@@ -1,0 +1,21 @@
+<?php         
+    class Animal {
+        protected $nom;
+        // Méthode constructeur de notre classe Animal
+        public function __construct($nouveauNom) {
+            $this->nom = $nouveauNom ; 
+        }
+
+        public function __clone(){
+            $this->nom = "L’animal est  un clone de " .$this->nom ;
+        }
+
+        public function getNom() {
+            return $this->nom ;
+        }
+
+        public function setNom($changeNom) {
+            $this->nom  = "L’animal s’appelle désormais " . $changeNom ;
+        }
+    }
+?>

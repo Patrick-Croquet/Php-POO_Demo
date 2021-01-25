@@ -1,0 +1,17 @@
+<?php
+
+class Chien extends Animal { 
+    private $pedigree;
+
+    public function setNom($nouveauNom) {
+    $this->nom=strtoupper($nouveauNom);
+    }
+
+    public function setPedigree($race) {
+    $this->pedigree=$race;
+    }
+
+    public function getPedigree() {
+    return $this->pedigree;
+    }
+}
