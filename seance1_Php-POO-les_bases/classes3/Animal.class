@@ -1,17 +1,23 @@
 <?php
 class Animal {
     protected $nom;
+    protected $prenom;
     protected $dateVaccination;
 
             // Méthode constructeur de notre classe Animal
-            public function __construct($nouveauNom) {
+            public function __construct($nouveauPrenom, $nouveauNom) {
         $this->nom =strtoupper( $nouveauNom);
+        $this->prenom = $nouveauPrenom;
         $this->dateVaccination = date("d-m-Y H:i:s");
         }
 
             //Un getter ou accesseur sert à récupérer
             public function getNom(){
                     return $this->nom;
+            }
+
+            public function getPrenom(){
+                    return $this->prenom;
             }
 
             public function getDateVaccination(){

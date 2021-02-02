@@ -2,8 +2,8 @@
                     include("classes3/Animal.class");   
                     include("classes3/Chien.class"); 
  
-                    $chat = new Animal("Belle");
-                    $chien = new Chien("Jump");
+                    $chat = new Animal("Belle","Lechat");
+                    $chien = new Chien("Jump","LeChien");
 
                     $chien->setPedigree("Labrador");
 
