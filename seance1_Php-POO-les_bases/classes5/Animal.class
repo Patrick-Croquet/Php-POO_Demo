@@ -15,8 +15,8 @@ class Animal {
     protected $nom;
     protected $dateVaccination;
     
-            // Méthode constructeur de notre classe Animal
-            public function __construct($nouveauNom) {
+    // Méthode constructeur de notre classe Animal
+    public function __construct($nouveauNom) {
 		$this->nom = $nouveauNom;
 		$this->dateVaccination = date("d-m-Y H:i:s");
 		}

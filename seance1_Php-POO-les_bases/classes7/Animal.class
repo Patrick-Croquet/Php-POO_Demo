@@ -18,11 +18,11 @@ class Animal {
     
     const VACCIN = "contre la rage";
     
-            // Méthode constructeur de notre classe Animal
-            public function __construct($nouveauNom) {
+    // Méthode constructeur de notre classe Animal
+    public function __construct($nouveauNom) {
 		$this->nom = $nouveauNom;
 		$this->dateVaccination = date("d-m-Y H:i:s");
-                self::$nbreVisites++;
+        self::$nbreVisites++;
 		}           
             
             //Un getter ou accesseur sert à récupérer
