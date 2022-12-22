@@ -13,22 +13,23 @@
  */
 class Joueur {
     protected $nom;
-		protected $score = 150;
-		public function __construct($nouveauNom){
-			$this->nom = $nouveauNom;
+	protected $score = 150;
+	
+    public function __construct($nouveauNom){
+		$this->nom = $nouveauNom;
     }
     //L’argument passé doit être un objet de la classe Occasionnel
     public function testTypeObjet(Occasionnel $occasionnel){
-	$this->score += $occasionnel->scoreOc ;
+	    $this->score += $occasionnel->scoreOc ;
     }
     
     public function getScore(){
-	return "Score actuel : " .$this->score. "<br />";
+	    return "Score actuel : " .$this->score. "<br />";
     }
     
     //L’argument passé doit être un tableau 
     public function testTypeTableau(array $table){
-	print_r($table) ;
+	    print_r($table) ;
     }
 
 }

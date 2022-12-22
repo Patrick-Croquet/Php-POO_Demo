@@ -5,7 +5,11 @@
 
             $chien = new Chien("Jump");
             // $chat = new Chat("Belle");
+            // $perroquet = new Animal("Coco");
 
             $chien->setAdresse("2, rue des Cerisiers","75014","Paris");
             echo "Adresse :<br />" . $chien->getAdresse();
+
+            /* $perroquet->setAdresse("2, rue des Cerisiers","75014","Paris");
+            echo "Adresse :<br />" . $perroquet->getAdresse(); */
 ?>

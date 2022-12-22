@@ -18,7 +18,7 @@ Class Occasionnel extends Joueur {
     use Deplacement;
 
     public function hello(){
-	echo "Bonjour de la classe <br />";
+	echo "Bonjour de la classe fille<br />";
     }
 
 }

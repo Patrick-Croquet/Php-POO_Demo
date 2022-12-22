@@ -1,7 +1,7 @@
 <?php
 class Voiture {
     const NOMBREAIRBAG = 3;
-    function __construct() {
+    public function __construct() {
         echo "Une nouvelle voiture vient d'être fabriquée<br />";
     }
     public function __destruct() { // destructeur

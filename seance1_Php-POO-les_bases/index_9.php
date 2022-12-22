@@ -5,7 +5,7 @@
                     $chat = new Animal("Belle");
                     $chien = new Chien("Jump");
                     $perroquet = new Animal("Coco");
-                    // $lapin = new Animal("Jimmy");
+                    $lapin = new Animal("Jimmy");
 
                     $chien->setPedigree("Labrador");
                     

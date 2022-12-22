@@ -48,6 +48,6 @@ class Kid {
 
 $child = new kid();
 
-$child->__set('age','15');
+$child->__set('age','18');
 $child->__get('age');
 ?>

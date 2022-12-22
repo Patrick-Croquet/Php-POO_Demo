@@ -13,12 +13,14 @@
  */
 class Chien extends Animal { 
     private  $pedigree;
-    
+    private  static $nbreVisitesChien;
+
     /*On définit un constructeur pour Chien. De fait,
      *on surcharge le constructeur du parent */
     public function __construct($nouveauNom) {
         parent :: __construct($nouveauNom);
         $this->nom = strtoupper($nouveauNom);
+        self::$nbreVisitesChien++;
     }
 
     // On définit deux méthodes spécifiques à Chien
@@ -29,4 +31,8 @@ class Chien extends Animal {
     public function getPedigree() {
 	return $this->pedigree;
     }    
+
+    public static function totalNbreVisites(){
+    return self::$nbreVisitesChien;
+    }
 } 
